@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jéssica Cria Sites</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffafa;
+      color: #333;
+    }
+    header {
+      background-color: #c0392b; /* vermelho escuro */
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .servico {
+      background-color: #f9f9f9;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #e74c3c; /* vermelho vibrante */
+      border-radius: 8px;
+    }
+    .servico h2 {
+      margin: 0;
+      color: #c0392b;
+    }
+    .preco {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .botao {
+      background-color: #e74c3c;
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .botao:hover {
+      background-color: #c0392b;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      background: #f2f2f2;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jéssica Cria Sites</h1>
+    <p>Criação de sites personalizados e ajuda com tecnologia</p>
+  </header>
+
+  <section>
+    <div class="servico">
+      <h2>🌐 Criação de Sites</h2>
+      <p>Sites para casamento, lojas, convites digitais e muito mais.</p>
+      <p class="preco">A partir de R$ 80</p>
+    </div>
+
+    <div class="servico">
+      <h2>📱 Aulas de Tecnologia</h2>
+      <p>Aprenda a mexer no celular, redes sociais, e-mails e configurações básicas.</p>
+      <p class="preco">R$ 30 por aula</p>
+    </div>
+
+    <div class="servico">
+      <h2>💡 Suporte Rápido</h2>
+      <p>Te ajudo com dúvidas no WhatsApp, celular travando, e-mails e muito mais.</p>
+      <p class="preco">R$ 15 por atendimento</p>
+    </div>
+
+    <div style="text-align: center;">
+      <h3>Fale comigo agora mesmo:</h3>
+      <a class="botao" href="https://wa.me/5532991988933" target="_blank">Me chame no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Jéssica Cria Sites - Juiz de Fora - MG
+  </footer>
+
+</body>
+</html>
