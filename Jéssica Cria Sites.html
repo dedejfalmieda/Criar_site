@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://html.cafe/x806445af#services -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jéssica Cria Sites</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #fff0f0; color: #333; overflow-x: hidden; }
+
+        header {
+            background-color: #c70000;
+            color: white;
+            padding: 40px 0 60px 0;
+            text-align: center;
+        }
+
+        header h1 { font-size: 2.5rem; animation: fadeIn 2s; }
+        nav { margin-top: 20px; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+        .services { display: flex; flex-direction: column; gap: 30px; }
+
+        .service {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .service.visible { opacity: 1; transform: translateY(0); }
+
+        .service img { width: 100px; }
+        .service-text h3 { color: #c70000; margin-bottom: 10px; }
+        .service-text p { font-size: 0.95rem; }
+
+        .contact { text-align: center; margin: 50px 0; }
+        .contact a {
+            display: inline-block;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            animation: pulse 2s infinite;
+        }
+        .contact a:hover { background-color: #b30000; }
+
+        footer { text-align: center; padding: 20px 0; background-color: #c70000; color: white; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes pulse { 0%,100%{transform:scale(1);}50%{transform:scale(1.1);} }
+
+        @media (max-width: 768px) {
+            .service { flex-direction: column; text-align: center; }
+            .service img { margin-bottom: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jéssica Cria Sites</h1>
+        <nav>
+            <a href="https://html.cafe/x806445af#services">Serviços</a>
+            <a href="https://html.cafe/x806445af#contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="services">
+            <h2 style="text-align:center; margin-bottom:30px;">Meus Serviços</h2>
+            <div class="services">
+                <div class="service visible">
+                    <img src="./Jéssica Cria Sites_files/laptop.png" alt="Computador">
+                    <div class="service-text">
+                        <h3>Criação de Sites</h3>
+                        <p>Desenvolvo sites modernos, responsivos e prontos para seu negócio ou evento.</p>
+                    </div>
+                </div>
+                <div class="service visible">
+                    <img src="./Jéssica Cria Sites_files/smartphone.png" alt="Celular">
+                    <div class="service-text">
+                        <h3>Formatação de Celular</h3>
+                        <p>Seu celular mais rápido e seguro, com limpeza de arquivos e vírus.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="./Jéssica Cria Sites_files/video.png" alt="Vídeo">
+                    <div class="service-text">
+                        <h3>Edição de Vídeo</h3>
+                        <p>Vídeos personalizados para redes sociais ou uso pessoal, de forma prática e criativa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Entre em Contato</h2>
+            <p>Fale comigo pelo WhatsApp ou confira meus projetos no GitHub:</p>
+            <a href="https://wa.me/553299198933" target="_blank">Chamar no WhatsApp</a>
+            <p style="margin-top:15px;"><a href="https://github.com/dedejfalmieda" target="_blank">Meu GitHub</a></p>
+        </section>
+    </div>
+
+    <footer>
+        © 2025 Jéssica Almeida de Oliveira. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        // Animação dos serviços ao rolar
+        const services = document.querySelectorAll('.service');
+        window.addEventListener('scroll', () => {
+            const triggerBottom = window.innerHeight / 5 * 4;
+            services.forEach(service => {
+                const serviceTop = service.getBoundingClientRect().top;
+                if(serviceTop < triggerBottom){
+                    service.classList.add('visible');
+                }
+            });
+        });
+    </script>
+
+
+
+
+<script defer="" data-domain="html.cafe" src="./Jéssica Cria Sites_files/script.js.download"></script>
+
+   </body></html>
